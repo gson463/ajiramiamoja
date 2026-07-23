@@ -144,15 +144,15 @@ export default function App() {
             <p className="section__label">Video</p>
             <h2 className="section__title">Ujumbe wa muhimu</h2>
             <p className="section__text">
-              Ujumbe kwa Mheshimiwa Rais, na ujumbe kwa wote — kutoka kwa
-              Daktari Daniel Nyambega Kerenge.
+              Ujumbe kwa Mheshimiwa Rais Mama Samia Suluhu Hassan, na ujumbe
+              kwa wote — kutoka kwa Daktari Daniel Nyambega Kerenge.
             </p>
             <div className="clips">
               <ClickPlayVideo
                 id="v1"
                 src="/videos/nyambega-1.mp4"
                 poster="/videos/nyambega-1.jpg"
-                title="Ujumbe kwa Mheshimiwa Rais"
+                title="Ujumbe kwa Mheshimiwa Rais Mama Samia Suluhu Hassan"
                 activeId={activeVideo}
                 onActivate={setActiveVideo}
               />
