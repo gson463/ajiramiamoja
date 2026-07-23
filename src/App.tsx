@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import ClickPlayVideo from "./ClickPlayVideo";
 
-const PHONE = "+255779255446";
-const PHONE_DISPLAY = "+255 (0) 779 255 446";
-const EMAIL = "dktnyambega@ajiramiamoja.com";
+const PHONE = "+255768255446";
+const PHONE_DISPLAY = "0768 255 446";
+const PHONE_2 = "+255779255446";
+const PHONE_2_DISPLAY = "0779 255 446";
+const EMAIL_INFO = "info@ajiramiamoja.com";
+const EMAIL_LALAMIKO = "lalamiko@ajiramiamoja.com";
+const EMAIL_DKT = "dktnyambega@ajiramiamoja.com";
 const WHATSAPP = `https://wa.me/255779255446`;
 
 const pillars = [
@@ -138,10 +142,10 @@ export default function App() {
         <section className="section section--videos" id="video">
           <div className="container">
             <p className="section__label">Video</p>
-            <h2 className="section__title">Sikiliza ujumbe</h2>
+            <h2 className="section__title">Ujumbe wa muhimu</h2>
             <p className="section__text">
-              Video mbili kutoka kwa Daktari Daniel Nyambega Kerenge. Bofya
-              kucheza — hazianzi peke yake.
+              Ujumbe kwa Mheshimiwa Rais, na ujumbe kwa wote — kutoka kwa
+              Daktari Daniel Nyambega Kerenge.
             </p>
             <div className="clips">
               <ClickPlayVideo
@@ -239,8 +243,8 @@ export default function App() {
               {sent ? (
                 <div className="form__success" role="status">
                   Ombi limeandaliwa. Maliza kutuma kwenye WhatsApp uliofunguka.
-                  Unaweza pia kutuma SMS kwa {PHONE_DISPLAY} au barua pepe{" "}
-                  {EMAIL}.
+                  Unaweza pia kutuma SMS kwa {PHONE_DISPLAY} / {PHONE_2_DISPLAY}{" "}
+                  au barua pepe {EMAIL_INFO}.
                 </div>
               ) : (
                 <form className="form" onSubmit={submit}>
@@ -306,8 +310,8 @@ export default function App() {
                     Tuma kupitia WhatsApp
                   </button>
                   <p className="form__note">
-                    Au SMS: {PHONE_DISPLAY} · Barua pepe:{" "}
-                    <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+                    Au SMS: {PHONE_DISPLAY} / {PHONE_2_DISPLAY} · Barua pepe:{" "}
+                    <a href={`mailto:${EMAIL_INFO}`}>{EMAIL_INFO}</a>
                   </p>
                 </form>
               )}
@@ -348,12 +352,24 @@ export default function App() {
               </p>
               <div className="contact-links">
                 <a href={`tel:${PHONE}`}>
-                  <strong>Simu / WhatsApp</strong>
+                  <strong>Simu</strong>
                   <span>{PHONE_DISPLAY}</span>
                 </a>
-                <a href={`mailto:${EMAIL}`}>
+                <a href={WHATSAPP} target="_blank" rel="noreferrer">
+                  <strong>WhatsApp</strong>
+                  <span>{PHONE_2_DISPLAY}</span>
+                </a>
+                <a href={`mailto:${EMAIL_INFO}`}>
                   <strong>Barua pepe</strong>
-                  <span>{EMAIL}</span>
+                  <span>{EMAIL_INFO}</span>
+                </a>
+                <a href={`mailto:${EMAIL_DKT}`}>
+                  <strong>Daktari</strong>
+                  <span>{EMAIL_DKT}</span>
+                </a>
+                <a href={`mailto:${EMAIL_LALAMIKO}`}>
+                  <strong>Lalamiko</strong>
+                  <span>{EMAIL_LALAMIKO}</span>
                 </a>
                 <a href="https://www.ajiramiamoja.com" target="_blank" rel="noreferrer">
                   <strong>Tovuti</strong>
