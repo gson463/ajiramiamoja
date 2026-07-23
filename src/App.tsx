@@ -9,7 +9,7 @@ const PHONE_2_DISPLAY = "0779 255 446";
 const EMAIL_INFO = "info@ajiramiamoja.com";
 const EMAIL_LALAMIKO = "lalamiko@ajiramiamoja.com";
 const EMAIL_DKT = "dktnyambega@ajiramiamoja.com";
-const WHATSAPP = `https://wa.me/255779255446`;
+const WHATSAPP = `https://wa.me/${PHONE_2.replace("+", "")}`;
 
 const pillars = [
   "Hulka",
